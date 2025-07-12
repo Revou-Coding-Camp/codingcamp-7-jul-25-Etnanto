@@ -6,7 +6,8 @@
     <title>TodoList - Etnanto</title>
     <!-- CSS External -->
      <link rel="stylesheet" href="css/style.css">
-
+<!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- Hero Website -->
@@ -27,8 +28,10 @@
         <section class="flex justify-between p-[8px]">
             <div class="flex gap-[8px]">
 
-                <button class="bg-gray-200 p-[4px] rounded">Show Completed</button>
-                <button class="bg-green-200 p-[4px] rounded">Show All</button>
+                <button class="bg-gray-200 p-[4px] rounded"
+                onclick="toggleTaskCompletion();">Show Completed</button>
+                <button class="bg-green-200 p-[4px] rounded"
+                onclick="showAll();">Show All</button>
             </div>
 
             <button class="bg-red-500 text-white p-[4px] rounded" onclick="deleteAllTasks();">Delete All</button>
@@ -48,5 +51,7 @@
     <footer>
 <span>c 2025 Todo List. All Right Reserved </span>
     </footer>
+     <!-- Javascript External -->
+    <script src="js/script.js"></script>
 </body>
 </html>
