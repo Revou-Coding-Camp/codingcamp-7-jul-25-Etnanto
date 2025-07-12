@@ -13,8 +13,37 @@
     <header>
 <h1>Todo List</h1>
     </header>
-    <main>
+    <main class="py-[16px] rounded">
+ <!-- Todo Input -->
+        <form class="flex justify-between p-[8px]">
+            <div class="flex gap-[8px]">
+                <input type="text" id="task-input" class="border rounded p-[4px] bg-white" placeholder="Add a new task">
+                <input type="date" id="due-date-input" class="border rounded p-[4px] bg-white" placeholder="Due date">
+            </div>
+            <button type="button" class="bg-blue-500 text-white p-[4px] rounded w-[50px]"
+                onclick="addTask();">+</button>
+                 </form>
+                  <!-- Todo Action -->
+        <section class="flex justify-between p-[8px]">
+            <div class="flex gap-[8px]">
 
+                <button class="bg-gray-200 p-[4px] rounded">Show Completed</button>
+                <button class="bg-green-200 p-[4px] rounded">Show All</button>
+            </div>
+
+            <button class="bg-red-500 text-white p-[4px] rounded" onclick="deleteAllTasks();">Delete All</button>
+        </section>
+         <!-- Todo List -->
+        <section>
+            <header>
+                <h2 class="text-xl font-bold">Tasks</h2>
+            </header>
+
+            <!-- Task List -->
+            <div id="task-list">
+                <p>Task is Empty!</p>
+            </div>
+        </section>
     </main>
     <footer>
 <span>c 2025 Todo List. All Right Reserved </span>
